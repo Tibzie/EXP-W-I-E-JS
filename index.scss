@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+// COLOURS
+$misty-blue: #2F5061;
+$coral: #ce7276;
+$ivory: #F4EAE6;
+$green: #4297A0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+body {
+    width: 100%;
+    // height: 100vh;
+    background-color: $misty-blue;
+
+    main {
+        padding: 40px 20px;
+    }
+    #form-container {
+        text-align: center;
+        .label {
+            color: #F4EAE6;
+        }
+        .textbox {
+            padding: 5px 10px;
+
+        }
+        #form-btn {
+            padding: 10px 35px;
+            border: none;
+            color: #F4EAE6;
+            font-weight: 700;
+            font-size: 1.2rem;
+            background-color: #ce7276;
+            cursor: pointer;
+        }
+    }
+    #grid {
+        .box {
+            background-color: #4297A0;
+            // width: 50px;
+            // height: 50px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    #form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .label {
+            margin-bottom: 15px;
+        }
+        .textbox {
+            margin-bottom: 5px;
+        }
+        #form-btn {
+            margin-bottom: 10px;
+        }
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // background-color: #ce7276;
+        padding: 10px 30px;
+        gap: 5px;
+        .box {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .box-title {
+                background-color: #7ab6bc !important;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
+            .box-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        }
+        // &>div {
+        //     display: flex;
+        //     text-align: center;
+        //     // padding: 10px;
+        //     height: 40px;
+        //     width: 100%;
+        //     align-items: center;
+        //     justify-content: center;
+        // }
+    }
+}

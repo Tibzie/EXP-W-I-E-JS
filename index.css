@@ -1,1 +1,111 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #2F5061;
+}
+
+body main {
+  padding: 40px 20px;
+}
+
+body #form-container {
+  text-align: center;
+}
+
+body #form-container .label {
+  color: #F4EAE6;
+}
+
+body #form-container .textbox {
+  padding: 5px 10px;
+}
+
+body #form-container #form-btn {
+  padding: 10px 35px;
+  border: none;
+  color: #F4EAE6;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: #ce7276;
+  cursor: pointer;
+}
+
+body #grid .box {
+  background-color: #4297A0;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  #form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #form-container .label {
+    margin-bottom: 15px;
+  }
+  #form-container .textbox {
+    margin-bottom: 5px;
+  }
+  #form-container #form-btn {
+    margin-bottom: 10px;
+  }
+  #grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 10px 30px;
+    gap: 5px;
+  }
+  #grid .box {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #grid .box .box-title {
+    background-color: #7ab6bc !important;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  #grid .box .box-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

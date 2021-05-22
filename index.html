@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Working with Strings</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./index.css">
+  <title>Transform String</title>
 </head>
 <body>
-    <input type="text">
-    <button>Enter</button>
+    <main>
+        <section id="form-container">
+            <label class="label" for="component-name">Enter a word</label>
+            <input type="text" class="textbox" id="input-field">
+            <button id="form-btn">Dew it!</button>
+        </section>
+        
+        <section id="grid">
+            <div class="box">
+                <div class="box-title">Uppercase</div>
+                <div id="first-box" class="box-content"></div>
+            </div>
+            
+            <div class="box">
+                <div class="box-title">Lowercase</div>
+                <div id="second-box" class="box-content"></div>
+            </div>
+            
+        </section>
+    </main>
 
-    <section id="grid">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
+    <script type="module" src="./task-linking.js"></script>
 </body>
 </html>
