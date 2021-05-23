@@ -24,12 +24,7 @@ body #form-container .label {
   color: #F4EAE6;
 }
 
-body #form-container .textbox {
-  padding: 5px 10px;
-}
-
 body #form-container #form-btn {
-  padding: 10px 35px;
   border: none;
   color: #F4EAE6;
   font-weight: 700;
@@ -38,12 +33,54 @@ body #form-container #form-btn {
   cursor: pointer;
 }
 
+body #grid {
+  display: -ms-grid;
+  display: grid;
+  padding: 10px 0px;
+  gap: 5px;
+}
+
 body #grid .box {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F4EAE6;
   background-color: #4297A0;
   margin-bottom: 10px;
 }
 
-@media (max-width: 450px) {
+body #grid .box .box-title {
+  background-color: #7ab6bc;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+body #grid .box .box-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
   #form-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -58,54 +95,55 @@ body #grid .box {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 30px;
   }
   #form-container .label {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 2rem;
   }
   #form-container .textbox {
+    padding: 5px 10px;
     margin-bottom: 5px;
+    width: 100%;
   }
   #form-container #form-btn {
-    margin-bottom: 10px;
+    padding: 10px 35px;
+    width: 100%;
   }
   #grid {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    padding: 10px 30px;
-    gap: 5px;
   }
-  #grid .box {
-    height: 100px;
+}
+
+@media (min-width: 501px) {
+  #form-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  #grid .box .box-title {
-    background-color: #7ab6bc !important;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
+  #form-container .textbox {
+    padding: 12px 10px;
   }
-  #grid .box .box-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
+  #form-container #form-btn {
+    padding: 10px 35px;
+  }
+  #grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 901px) {
+  #grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 /*# sourceMappingURL=index.css.map */
