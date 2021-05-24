@@ -1,8 +1,23 @@
-import { makeUpperCase, makeLowerCase } from './module/functions.js';
+import { 
+    makeUpperCase,
+    makeLowerCase,
+    reverseWord,
+    countChar,
+    interpolateWords,
+    removeFirstLast,
+    repeatWord,
+    randomChar
+} from './module/functions.js';
 
 
-const firstAnswer = document.querySelector("#first-box");
-const secondAnswer = document.querySelector("#second-box");
+const firstAnswer = document.getElementById("first-box");
+const secondAnswer = document.getElementById("second-box");
+const thirdAnswer = document.getElementById("third-box");
+const fourthAnswer = document.getElementById("fourth-box");
+const fifthAnswer = document.getElementById("fifth-box");
+const sixthAnswer = document.getElementById("sixth-box");
+const seventhAnswer = document.getElementById("seventh-box");
+const eigthAnswer = document.getElementById("eigth-box");
 
 const inputField = document.querySelector("#input-field");
 const btn = document.querySelector("#form-btn");
@@ -13,5 +28,11 @@ btn.addEventListener("click", () => {
 
     firstAnswer.textContent = makeUpperCase(value);
     secondAnswer.textContent = makeLowerCase(value);
+    thirdAnswer.textContent = countChar(value);
+    fourthAnswer.textContent = reverseWord(value);
+    fifthAnswer.textContent = interpolateWords(value);
+    sixthAnswer.textContent = removeFirstLast(value);
+    seventhAnswer.textContent = repeatWord(value);
+    eigthAnswer.textContent = randomChar(value);
 });
 

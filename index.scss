@@ -26,8 +26,6 @@ body {
         .label {
             color: #F4EAE6;
         }
-        .textbox {
-        }
         #form-btn {
             
             border: none;
@@ -43,7 +41,7 @@ body {
         padding: 10px 0px;
         gap: 5px;
         .box {
-            height: 100px;
+            height: 125px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -98,6 +96,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 30px;
         .textbox {
             padding: 12px 10px;
             
@@ -111,6 +110,13 @@ body {
     }
 }
 @media (min-width: 901px) {
+    .textbox {
+        padding: 12px 10px;
+        
+    }
+    #form-btn {
+        padding: 10px 35px;
+    }
     #grid {
         grid-template-columns: repeat(4, 1fr);
     }
