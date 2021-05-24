@@ -26,4 +26,8 @@ export function repeatWord(word) {
 export function randomChar(word) {
     return word.charAt(Math.floor(Math.random() * 10) + 1);
 }
+export function includeChar(word) {
+    const question = word.includes("p")
+    return question == true ? "it includes that character" : "nope, not in this one";
+}
 

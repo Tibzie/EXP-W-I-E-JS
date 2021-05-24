@@ -6,7 +6,8 @@ import {
     interpolateWords,
     removeFirstLast,
     repeatWord,
-    randomChar
+    randomChar,
+    includeChar
 } from './module/functions.js';
 
 
@@ -18,6 +19,7 @@ const fifthAnswer = document.getElementById("fifth-box");
 const sixthAnswer = document.getElementById("sixth-box");
 const seventhAnswer = document.getElementById("seventh-box");
 const eigthAnswer = document.getElementById("eigth-box");
+const ninthAnswer = document.getElementById("ninth-box");
 
 const inputField = document.querySelector("#input-field");
 const btn = document.querySelector("#form-btn");
@@ -34,5 +36,6 @@ btn.addEventListener("click", () => {
     sixthAnswer.textContent = removeFirstLast(value);
     seventhAnswer.textContent = repeatWord(value);
     eigthAnswer.textContent = randomChar(value);
+    ninthAnswer.textContent = includeChar(value);
 });
 
